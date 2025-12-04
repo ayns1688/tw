@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کسینوس</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>محاسبه کسینوس</h1>
+
+    <div class="inputs">
+      <input type="number" id="num1" placeholder="عدد">
+    </div>
+
+    <button onclick="jam2()">محاسبه</button>
+
+    <p id="javab">جواب:</p>
+    
+
+    <a href="index.html" class="back-btn">بازگشت</a>
+  </div>
+
+  <script>
+    function jam2() {
+        a = Number(document.getElementById("num1").value);
+        b = a * (Math.PI / 180)
+        d = Math.cos(b);
+        Number(document.getElementById("javab").innerHTML = d);
+    }
+  </script>
+</body>
+</html>
